@@ -1,8 +1,8 @@
 ---
 title: "Deliberation Across the World"
-subtitle: "Examining the Link Between <br> Regime Legitimacy and Deliberation <br> <br> Rosa Seitz^[] & Fabio Votta^[] <br> <br> 2018/06/05"
-author: "<br> <sup>1</sup> E-Mail: fabio.votta@gmail.com <br> <sup>2</sup> E-Mail: rosa.marie.seitz@gmail.com"
-date: "Slides: <a href='deliberation-and-legitimacy.netlify.com'>https://deliberation-and-legitimacy.netlify.com/ </a>"
+subtitle: "Examining the Link Between <br> Regime Legitimacy and Deliberation <br> <br> <font size='6'>Rosa Seitz^[] & Fabio Votta^[] <br> 2018-05-06</font>"
+author: "<sup>1</sup> E-Mail: rosa.marie.seitz@gmail.com <br> <sup>2</sup> E-Mail: fabio.votta@gmail.com"
+date: "<br> Slides: <a href='deliberation-and-legitimacy.netlify.com'>https://deliberation-and-legitimacy.netlify.com/ </a>"
 output:
   xaringan::moon_reader:
     lib_dir: libs
@@ -16,7 +16,7 @@ output:
     
 
 ```{r xaringan-themer, include = FALSE}
-library(xaringanthemer)
+# library(xaringanthemer)
 # mono_accent(base_color = "#252525", link_color	= "rgb(198, 219, 239)")
 ```
 
