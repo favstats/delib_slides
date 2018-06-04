@@ -84,7 +84,7 @@ Research Question:
 
 .onehundredtwenty[
 
-1. Theoreteical Framework
+1. Theoretical Framework
 2. Data & Methodology
 3. Challenges
 4. Analysis & Results
@@ -105,7 +105,8 @@ class: inverse, center, middle
 ## Theory
 
 + Central claim of deliberative theory: 
-    + making it possible to arrive at (more) legitimate desicions
+    + to arrive at (more) legitimate decisions 
+    + see for example Habermas (1994: 7–8) & Warren & Gastil (2015: 562)
 
 
 --
@@ -113,12 +114,13 @@ class: inverse, center, middle
 
 
 --
-+ General assumption: Deliberative qualities of a political system increase support from its citizens
++ General assumption: deliberative qualities of a political system increase support from its citizens
 
 
 --
-+ *Authoritarian deliberation*: Might decrease support due to increasing democratic capabilites
-
++ Consequences of *Authoritarian Deliberation* (He & Warren, 2011)
+    + Authoritarian regimes might use deliberation to *increase* support  
+    + Might *decrease* support due to increasing democratic capabilites 
 
 
 ---
@@ -168,8 +170,8 @@ class: inverse, center, middle
         + Employment (0/1)
     + Macro Level
         + Polity/FH
-        + Democracy (0/1)
-        + Autocracy (0/1)
+        + Democracy (0/1)<sup>1</sup>
+        + Autocracy (0/1)<sup>1</sup>
         + logged GDP per capita
         + logged Population
         + Life Expectancy
@@ -178,6 +180,9 @@ class: inverse, center, middle
         + WVS, Afrobarometer, Latinobarometro, Americasbarometer, Asianbarometer, ESS
         
 ]
+
+<font size='1'><sup>1</sup>We apply the Polity2-classification of democracies, anocracies and autocracies. Polity/FH was rescaled to range from -10 to +10 and the cut-off values are set at 6 and -6 (-10 – -6 = Autocracy; -5 – 5 =Anocracy; 6 – 10 = Democracy).</font>
+
 
 ---
 
@@ -197,23 +202,12 @@ htmltools::includeHTML("tables/factor_analysis.html")
 
 ---
 
-## Deliberative Component Index (DCI)?
-
-+ short description?
-+ Table with five components?
+## Deliberative Component Index (DCI)
 
 <center>
 <img src="images/dci_table.png">
 </center>
 
-
----
-
-## World Maps
-
-<center>
-<img src="images/map3.png" height="470">
-</center>
 
 ---
 
@@ -291,19 +285,36 @@ class: inverse, center, middle
 
 ## Analysis
 
-+ Multilevel Models
-    + In total 91 seperate models
-    + DVs: Regime Support (No, Low, High Bias)
-    + Main IVs: All six Deliberation indicators
+Given the hierarchical nature of the data we estimate *multilevel models*
++ Dependent Variables
+    + Regime Support *(No Bias)*   -> `ICC: 44.97%`
+    + Regime Support *(Low Bias)*  -> `ICC: 41.70%`
+    + Regime Support *(High Bias)* -> `ICC: 40.97%`
+
+--
     
++ Main independent variables
+    + Deliberative Component Index (DCI)
+    + plus all five components of the DCI
+
+--
+
++ In total 91 seperate models
+    + split into three subsamples (Complete, Democracies, Non-Democracies)
+ 
+--
+
+*Note: complete sample uses dummy variables of Polity/FH because of non-linearity and multicolinearity issues*
+
 
 ---
 
 ## Results
 
 
-<img src="images/slides_coefplot.png">
+<a href="https://raw.githubusercontent.com/favstats/delib_slides/master/images/slides_coefplot.png" target = "blank"> <img src="images/slides_coefplot.png"> </a>
 
+*Click on picture for larger Version*
 
 ---
 
@@ -311,7 +322,9 @@ class: inverse, center, middle
 
 <br>
 
-<img src="images/model_comparison_polities.png">
+<a href="https://github.com/favstats/delib_slides/raw/master/images/model_comparison_polities.png" target = "blank"> <img src="images/model_comparison_polities.png"> </a>
+
+*Click on picture for larger Version*
 
 ---
 
@@ -324,13 +337,18 @@ class: inverse, center, middle
 ## Conclusions & Future Research
 
 * No simple answer to research question
- + deliberation seems to have a positive effect on regime support in democracies
- + less robust and ambiguous results for non-democracies and complete sample
+ + deliberation seems to have a *positive effect* on regime support *in democracies*
+ + less robust and *ambiguous results for non-democracies and complete sample*
     
-    
+--
+
 * Presumably biased regime support
  + should be taken into account 
  + possible remedies? (e.g. weighting procedures, survey design)
+ + individual-level vs. country-level weighting?
+
+--
+
 
 * Validity of the DCI
     + more sensitive approaches to measure deliberation on the country level are neccessary
@@ -356,10 +374,13 @@ Code and Data on <a href='https://github.com/favstats/paper_delib'>GitHub</a>
 
 ## References
 
-Hawley, G. (2017). Making Sense of the Alt-right. Columbia University Press.
+*Habermas, J. (1994). Three normative models of democracy. Constellations, 1 (1), 1–10.*
 
-Marwick, A., & Lewis, R. (2017). Media manipulation and disinformation online. New York: Data & Society Research Institute.
+*He, B., & Warren, M. E. (2011). Authoritarian deliberation: The deliberative turn in chinese political development. Perspectives on Politics, 9 (2), 269–289.*
 
+*Tannenberg, M. (2017). The autocratic trust bias: Politically sensitive survey items and self-censorship. Varieties of Democracy Institute: Working Paper, (49), 1–31.*
+
+*Warren, M. E., & Gastil, J. (2015). Can deliberative minipublics address the cognitive challenges of democratic citizenship? The Journal of Politics, 77 (2), 562–574.*
 
 
 ---
@@ -379,41 +400,43 @@ class: inverse, center, middle
 
 ### Maps - Deliberation
 
-<img src="images/map_dci.png">
+<a href="https://github.com/favstats/delib_slides/raw/master/images/map_dci.png" target = "blank"><img src="images/map_dci.png"></a>
 
 ---
 
 ### Maps - Regime Support
 
-<img src="images/map_regime.png">
+<a href="https://github.com/favstats/delib_slides/raw/master/images/map_regime.png" target = "blank"><img src="images/map_regime.png"></a>
 
 ---
 
 ### Coefficent Plots - Complete Sample
 
-<img src="images/coefplot.png">
+
+<a href="https://github.com/favstats/delib_slides/raw/master/images/coefplot.png" target = "blank"> <img src="images/coefplot.png"></a>
+
 
 ---
 
 ### Coefficent Plots - Democracy Sample
 
-<img src="images/coefplot_dem.png">
+<a href="https://github.com/favstats/delib_slides/raw/master/images/coefplot_dem.png" target = "blank"> <img src="images/coefplot_dem.png"></a>
 
 ---
 
 ### Coefficent Plots - Non-Democracy Sample
 
-<img src="images/coefplot_nondem.png">
+
+<a href="https://github.com/favstats/delib_slides/raw/master/images/coefplot_nondem.png" target = "blank"> <img src="images/coefplot_nondem.png"></a>
+
 
 ---
-
-
 
 ### Model Comparisons - Just Control Models vs. Just Deliberation Models
 
 <br>
 
-<img src="images/model_comparison_wo_delibs2.png">
+<a href="https://github.com/favstats/delib_slides/raw/master/images/model_comparison_wo_delibs2.png" target = "blank"> <img src="images/model_comparison_wo_delibs2.png"></a>
 
 ---
 
@@ -422,7 +445,8 @@ class: inverse, center, middle
 <br>
 <br>
 
-<img src="images/model_comparison.png">
+<a href="https://github.com/favstats/delib_slides/raw/master/images/model_comparison.png" target = "blank"> <img src="images/model_comparison.png"></a>
+
 
 ---
 
@@ -431,7 +455,9 @@ class: inverse, center, middle
 <br>
 <br>
 
-<img src="images/model_comparison_dem.png">
+<a href="https://github.com/favstats/delib_slides/raw/master/images/model_comparison_dem.png" target = "blank"> <img src="images/model_comparison_dem.png"></a>
+
+
 
 ---
 
@@ -440,7 +466,10 @@ class: inverse, center, middle
 <br>
 <br>
 
-<img src="images/model_comparison_nondem.png">
+
+<a href="https://github.com/favstats/delib_slides/raw/master/images/model_comparison_nondem.png" target = "blank"> <img src="images/model_comparison_nondem.png"></a>
+
+
 
 
 
