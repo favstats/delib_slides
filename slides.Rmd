@@ -73,7 +73,7 @@ knitr::opts_chunk$set(echo = F, warning = F, error = F, message = F)
 
 Research Question:
 
-> What role does deliberative quality play for regime legitimacy across the world? 
+> What role does the deliberative quality of a political system play for regime legitimacy? 
 
 ]
 
@@ -194,7 +194,7 @@ htmltools::includeHTML("tables/factor_analysis.html")
         
 ]
 
-<font size='1'><sup>1</sup>We apply the Polity2-classification of democracies, anocracies and autocracies. Polity/FH was rescaled to range from -10 to +10 and the cut-off values are set at 6 and -6 (-10 – -6 = Autocracy; -5 - 5 =Anocracy; 6 - 10 = Democracy).</font>
+<font size='1'><sup>1</sup>We apply the Polity2-classification of democracies, anocracies and autocracies. Polity/FH was rescaled to range from -10 to +10 and the cut-off values are set at 6 and -6 (-10 - -6 = Autocracy; -5 - 5 = Anocracy; 6 - 10 = Democracy).</font>
 
 
 ---
