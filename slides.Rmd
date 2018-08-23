@@ -1,6 +1,6 @@
 ---
 title: "Deliberation Across the World"
-subtitle: "Examining the Link Between <br> Regime Legitimacy and Deliberation <br> <br> <font size='6'>Rosa Seitz^[] & Fabio Votta^[] <br> 2018-29-06</font>"
+subtitle: "Examining the Link Between <br> Regime Legitimacy and Deliberation <br> <br> <font size='6'>Rosa Seitz^[] & Fabio Votta^[] <br> 23-08-2018</font>"
 author: "<sup>1</sup> E-Mail: rosa.marie.seitz@gmail.com <br> <sup>2</sup> E-Mail: fabio.votta@gmail.com"
 date: "<br> Slides: <a href='deliberation-and-legitimacy.netlify.com'>https://deliberation-and-legitimacy.netlify.com/ </a>"
 output:
@@ -91,7 +91,7 @@ class: inverse, center, middle
 > Deliberation in its original sense contains the process of ***rational consideration of arguments***, in which participants provide ***reasoned justification*** for their positions, relate to the ***common good***, ***respect other opinions*** and are willing to ***yield to better arguments***
 
 .center[
-<i> for an overview see Bächtiger et al. (2010) </i> 
+<i> for an overview see BÃ¤chtiger et al. (2010) </i> 
 ]
 --
 
@@ -134,7 +134,7 @@ class: inverse, center, middle
   + Asian Barometer Survey, Wave 3 and Wave 4 (2010-2015) 
   + AmericasBarometer (2010-2014) 
   + European Social Survey, Round 6 (2012) 
-  + Latinobarómetro (2015) 
+  + Latinobarometro (2015) 
   + World Values Survey (2010-2014)
 
 + In total 316,938 individual cases in 119 Countries
@@ -387,9 +387,9 @@ Code and Data on <a href='https://github.com/favstats/paper_delib'>GitHub</a>
 
 ## References
 
-*Bächtiger, A., Niemeyer, S., Neblo, M., Steenbergen, M. R., & Steiner, J. (2010). Disentangling diversity in deliberative democracy: Competing theories, their blind spots and complementarities. Journal of Political Philosophy, 18(1), 32-63.*
+*BÃ¼chtiger, A., Niemeyer, S., Neblo, M., Steenbergen, M. R., & Steiner, J. (2010). Disentangling diversity in deliberative democracy: Competing theories, their blind spots and complementarities. Journal of Political Philosophy, 18(1), 32-63.*
 
-*Chambers, S. (1996). Reasonable democracy: Jürgen Habermas and the politics of discourse. Cornell University Press.*
+*Chambers, S. (1996). Reasonable democracy: JÃ¼rgen Habermas and the politics of discourse. Cornell University Press.*
 
 *Habermas, J. (1994). Three normative models of democracy. Constellations, 1 (1), 1-10.*
 
@@ -483,7 +483,6 @@ class: inverse, center, middle
 
 
 <a href="https://github.com/favstats/delib_slides/raw/master/images/model_comparison_nondem.png" target = "blank"> <img src="images/model_comparison_nondem.png"></a>
-
 
 
 
